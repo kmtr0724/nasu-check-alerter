@@ -1,0 +1,10 @@
+[Unit]
+Description=health alerter 
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/get_health.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
